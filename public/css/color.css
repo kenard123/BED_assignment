@@ -1,0 +1,50 @@
+:root {
+    --custom-color: #000000;
+    --custom-color-rgb: 9, 111, 42;
+    --custom-color-light-rgb: 146, 247, 178;
+    --custom-color-darker: #1a1a1a; /* A darker shade for hover and active */
+    --navbar-color: #393838; /* Added for navbar */
+    --footer-color: #000000; /* Added for footer */
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--custom-color);
+    --bs-btn-border-color: var(--custom-color);
+    --bs-btn-hover-bg: var(--custom-color-darker);
+    --bs-btn-hover-border-color: var(--custom-color-darker);
+    --bs-btn-active-bg: var(--custom-color-darker); /* Use a darker shade on active */
+    --bs-btn-active-border-color: var(--custom-color-darker);
+    --bs-btn-disabled-bg: var(--custom-color-light); /* Adjust disabled button color */
+    --bs-btn-disabled-border-color: var(--custom-color-light);
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--custom-color-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.form-check-input:checked {
+    background-color: var(--custom-color);
+    border-color: var(--custom-color);
+}
+
+.form-control:focus, 
+.form-check-input:focus {
+    border-color: rgba(var(--custom-color-light-rgb), 0.8);
+    box-shadow: 0 0 0 4px rgba(var(--custom-color-light-rgb), 0.6);
+}
+
+.navbar {
+    background-color: var(--navbar-color) !important;
+    color: var(--custom-text-color);
+}
+
+footer {
+    background-color: var(--footer-color) !important;
+    color: var(--custom-text-color);
+}
+
+.custom-footer {
+    background-color: var(--footer-color) !important;
+    color: var(--custom-text-color);
+}

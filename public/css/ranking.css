@@ -1,0 +1,13 @@
+/* Highlight Top 3 Players */
+.fw-bold {
+    font-weight: bold;
+}
+tr:nth-child(1) td:first-child { color: gold; }
+tr:nth-child(2) td:first-child { color: silver; }
+tr:nth-child(3) td:first-child { color: #cd7f32; } /* Bronze */
+
+/* Add Hover Effect */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa !important;
+    transition: 0.3s;
+}
