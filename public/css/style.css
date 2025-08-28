@@ -153,3 +153,41 @@ header h1 {
     gap: 10px; /* Adjust space between buttons */
     margin-top: 15px;
 }
+
+/* General card styling (ensure your existing card styles are compatible) */
+.card {
+    position: relative; /* Essential for positioning the ribbon */
+    overflow: hidden;   /* Hides the overflow of the ribbon */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling for a selected card */
+.selected-card {
+    border: 3px solid #ff9900; /* More vibrant border */
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.6); /* Stronger glow */
+    transform: translateY(-5px); /* Slightly lift the selected card */
+}
+
+/* Styling for the "SELECTED" ribbon */
+.selected-ribbon {
+    position: absolute;
+    top: 15px; /* Adjust vertical position */
+    right: -20px; /* Adjust horizontal position to create an angle */
+    z-index: 10;
+    width: 120px; /* Width of the ribbon */
+    background-color: #ff9900; /* Gold/orange background */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: white; /* White text for contrast */
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 0;
+    transform: rotate(45deg); /* Angle the ribbon */
+    transform-origin: 50% 50%; /* Rotate from its center */
+}
+
+.selected-ribbon span {
+    display: block; /* Ensure text takes full width */
+}
